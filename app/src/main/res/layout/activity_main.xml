@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary"
+        app:contentInsetStart="0dp">
+
+        <Button
+            android:id="@+id/btn_search"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:drawableStart="@drawable/ic_tb_search"
+            android:drawableLeft="@drawable/ic_tb_search"
+            android:onClick="SearchSide"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/btn_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:drawableEnd="@drawable/ic_tb_expand"
+            android:drawablePadding="5dip"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:gravity="center"
+            android:onClick="SubjectPopup"
+            android:singleLine="true"
+            android:text="@string/agenda_start"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/foreground_selector" />
+
+        <Button
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:drawableStart="@drawable/ic_tb_additional"
+            android:drawableLeft="@drawable/ic_tb_additional"
+            android:onClick="CreateContent"
+            tools:ignore="RtlHardcoded" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:id="@+id/topbar_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/topbar"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorSecondary" />
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar_divider" />
+
+</RelativeLayout>

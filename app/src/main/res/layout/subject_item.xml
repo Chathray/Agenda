@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_selector">
+
+    <TextView
+        android:id="@+id/si_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/title"
+        android:textColor="@color/colorOnSurface"
+        tools:ignore="TextViewEdits" />
+
+
+    <TextView
+        android:id="@+id/si_index"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="13dp"
+        android:gravity="center"
+        android:text="@string/index"
+        android:textColor="@color/colorOnSecondary"
+        tools:ignore="RelativeOverlap" />
+
+    <!--    <View-->
+    <!--        android:id="@+id/topbar_divider"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1px"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginStart="10dp"-->
+    <!--        android:layout_marginEnd="10dp"/>-->
+
+</RelativeLayout>

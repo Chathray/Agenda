@@ -1,0 +1,150 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/search_view"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/search_selector"
+            android:drawableEnd="@drawable/ic_sb_clear"
+            android:hint="@string/search_hint"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dip"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:drawableTop="@drawable/ic_agenda"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/no_data_available"
+            android:textAlignment="center"
+            android:textColor="#AAAAAA" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subject_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="28dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        tools:ignore="RtlSymmetry">
+
+        <TextView
+            android:id="@+id/bottom_sheet_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="@color/background_selector"
+            android:drawableEnd="@drawable/ic_bs_toggle" />
+
+        <!---->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="@string/view_mode"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/bs_spacing"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_bs_spacing"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/foreground_selector" />
+
+        <TextView
+            android:id="@+id/bs_arrange"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_bs_arrange"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:textColor="@color/foreground_selector" />
+
+        <!---->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/app"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="#808080" />
+
+        <TextView
+            android:id="@+id/bs_settings"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_bs_settings"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="@string/options"
+            android:textColor="@color/foreground_selector" />
+
+        <TextView
+            android:id="@+id/bs_about"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_bs_about"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="@string/info"
+            android:textColor="@color/foreground_selector" />
+
+        <TextView
+            android:id="@+id/bs_contact"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_bs_contact"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:text="@string/contact"
+            android:textColor="@color/foreground_selector" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

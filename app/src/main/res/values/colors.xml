@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#FAFAFA</color>
+    <color name="colorOnBackground">#202020</color>
+
+    <color name="colorPrimary">#FAFAFA</color>
+    <color name="colorOnPrimary">#2B8EFF</color>
+    <color name="colorPrimaryDark">#1C5ABB</color>
+
+    <color name="colorAccent">#2B8EFF</color>
+    <color name="colorParent">#FFFFFF</color>
+
+    <color name="colorSurface">#F3F5F7</color>
+    <color name="colorOnSurface">#272727</color>
+
+    <color name="colorSecondary">#909090</color>
+    <color name="colorOnSecondary">#EC5041</color>
+</resources>

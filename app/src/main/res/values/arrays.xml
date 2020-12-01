@@ -1,0 +1,17 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="arrange_subject_entries">
+        <item>@string/arrange_sj_asc</item>
+        <item>@string/arrange_sj_desc</item>
+        <item>@string/arrange_sj_newest</item>
+        <item>@string/arrange_sj_oldest</item>
+    </string-array>
+
+    <string-array name="arrange_subject_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+</resources>

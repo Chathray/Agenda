@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="subject_index">1</integer>
+    <integer name="subject_key">1</integer>
+
+    <integer name="spacing_compact">48</integer>
+    <integer name="spacing_normal">54</integer>
+    <integer name="spacing_unabridged">64</integer>
+
+</resources>

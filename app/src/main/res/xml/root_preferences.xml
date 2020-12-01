@@ -1,0 +1,39 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/toolbar_header">
+
+        <ListPreference
+            app:defaultValue="1"
+            app:entries="@array/arrange_subject_entries"
+            app:entryValues="@array/arrange_subject_values"
+            app:key="arrange"
+            app:title="@string/arrange_sj_title"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/system_header">
+
+        <EditTextPreference
+            app:key="signature"
+            app:title="@string/signature_title"
+            app:icon="@drawable/ic_op_signature"
+            app:useSimpleSummaryProvider="true" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="language"
+            app:summaryOff="@string/lang_off"
+            app:summaryOn="@string/lang_on"
+            app:title="@string/lang_title"/>
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="dark_theme"
+            app:summaryOff="@string/dark_them_off"
+            app:summaryOn="@string/dark_them_on"
+            app:title="@string/dark_theme"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

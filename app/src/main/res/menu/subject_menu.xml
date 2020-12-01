@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:icon="@drawable/ic_al_create"
+            android:onClick="DoCreateSubject"
+            android:title="@string/create_subject" />
+    </group>
+    <item
+        android:icon="@drawable/ic_al_rename"
+        android:onClick="DoRenameSubject"
+        android:title="@string/rename_subject" />
+    <item
+        android:icon="@drawable/ic_al_delete"
+        android:onClick="DoDeleteSubject"
+        android:title="@string/delete_subject" />
+</menu>
